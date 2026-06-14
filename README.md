@@ -19,13 +19,6 @@ Please feel free to check out my projects below to see how I translate complianc
 
 - **[Vulnerability Management Program Implementation]()**
   * Established end-to-end vulnerability lifecycles, mimicking enterprise-level scanning, asset prioritization, and risk scoring.
-- **[Programmatic Vulnerability Remediations (PowerShell, BASH, & Shell Commands)]()**
-  * Developed automated patching and system hardening scripts to rapidly decrease attack surfaces across hybrid environments.
-
-## 🚨 Threat Hunting and Security Operations
-
-- **[Threat Hunting Scenario (Tor Browser Usage)]()**
-  * Conducted deep-dive log analysis and network forensics to detect, trace, and isolate unauthorized anonymized traffic within a managed perimeter.
 
 <hr/>
 
