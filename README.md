@@ -1,7 +1,5 @@
 # <a href="https://www.linkedin.com/in/joaomarcelo-miranda/">Joao Miranda</a>'s IT and Cybersecurity Project Portfolio 🔐
 
-**TL;DR:** 🛡️ Cybersecurity professional and academic bridging the gap between theoretical defense frameworks and hands-on technical execution. 
-
 ---
 
 ## 👨‍💻 About Me
