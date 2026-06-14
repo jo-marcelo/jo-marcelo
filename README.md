@@ -17,7 +17,7 @@ Please feel free to check out my projects below to see how I translate complianc
 
 ## ⚠️ Vulnerability Management Projects
 
-- **[Vulnerability Management Program Implementation]()**
+- **[Continuous-Vulnerability-Resolution-Program](https://github.com/jo-marcelo/Continuous-Vulnerability-Resolution-Program)**
   * Established end-to-end vulnerability lifecycles, mimicking enterprise-level scanning, asset prioritization, and risk scoring.
 
 <hr/>
