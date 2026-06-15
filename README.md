@@ -24,7 +24,6 @@ Please feel free to check out my projects below to see how I translate complianc
 
 [<img align="left" alt="Joao Miranda | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
 [<img align="left" alt="Joao Miranda | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
-[<img align="left" alt="Joao Miranda | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
 
 [youtube]: https://www.youtube.com/@J-MarceloMiranda
 [linkedin]: https://linkedin.com/in/joaomarcelo-miranda/
