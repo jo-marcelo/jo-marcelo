@@ -20,6 +20,8 @@ Please feel free to check out my projects below to see how I translate complianc
 
 <hr/>
 
+## ⚠️ Threat Hunting Scenarios
+- **[azure-threat-hunting-kql]((https://github.com/jo-marcelo/azure-threat-hunting-kql))**
 ## 🤳 Connect With Me
 
 [<img align="left" alt="Joao Miranda | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
