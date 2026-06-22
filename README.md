@@ -4,10 +4,10 @@
 
 ## 👨‍💻 About Me
 
-- **Academic Foundation:** Hold a BS in Computer Science and currently accelerating through an MS in Cybersecurity and Information Assurance (MSCSIA) via Western Governors University (WGU). 📚
-- **Core Credentials:** Active holder of the CompTIA CySA+ (Cybersecurity Analyst) and ISC² Certified in Cybersecurity (CC) certifications. 🎖️
-- **The Mission:** I love tackling complex challenges through hands-on architecture, defense-in-depth, and proactive analysis. 
-- **What's Next:** Currently sharpening my skillset toward deep defensive operations, governance, and advanced penetration testing (targeting PenTest+, SecurityX/CASP+, and CISM). 🎯
+* **Academic Foundation:** Hold a BS in Computer Science and currently accelerating through an MS in Cybersecurity and Information Assurance (MSCSIA) via Western Governors University (WGU). 📚
+* **Core Credentials:** Active holder of the CompTIA CySA+ (Cybersecurity Analyst) and ISC² Certified in Cybersecurity (CC) certifications. 🎖️
+* **The Mission:** Driven to tackle complex challenges through hands-on security architecture, defense-in-depth, and proactive threat analysis.
+* **What's Next:** Currently sharpening my skillset toward deep defensive operations, risk management, and advanced penetration testing (targeting PenTest+, SecurityX/CASP+, and CISM). 🎯
 
 Please feel free to check out my projects below to see how I translate compliance, frameworks, and threat intelligence into production-ready security operations!
 
@@ -15,20 +15,24 @@ Please feel free to check out my projects below to see how I translate complianc
 
 ## ⚠️ Vulnerability Management Projects
 
-- **[Continuous-Vulnerability-Resolution-Program](https://github.com/jo-marcelo/Continuous-Vulnerability-Resolution-Program)**
+* **[Continuous-Vulnerability-Resolution-Program](https://github.com/jo-marcelo/Continuous-Vulnerability-Resolution-Program)** *(Repo currently private)*
   * Established end-to-end vulnerability lifecycles, mimicking enterprise-level scanning, asset prioritization, and risk scoring.
 
-<hr/>
+---
 
-## ⚠️ Threat Hunting Scenarios
-- **[azure-threat-hunting-kql](https://github.com/jo-marcelo/azure-threat-hunting-kql)**
+## 🎯 Threat Hunting Scenarios
 
+* **[azure-threat-hunting-kql](https://github.com/jo-marcelo/azure-threat-hunting-kql)** *(Repo currently private)*
+  * A simulated threat-hunting engagement using Microsoft Defender for Endpoint (MDE) and KQL to detect, isolate, and remediate an internal "Living-off-the-Land" PowerShell port-scanning attack causing local network degradation.
 ---
 
 ## 🤳 Connect With Me
 
-[<img align="left" alt="Joao Miranda | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
-[<img align="left" alt="Joao Miranda | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
+[<img align="left" alt="Joao Miranda | LinkedIn" width="24px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
+[<img align="left" alt="Joao Miranda | YouTube" width="24px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
+
+<br />
+<br />
 
 [youtube]: https://www.youtube.com/@J-MarceloMiranda
 [linkedin]: https://linkedin.com/in/joaomarcelo-miranda/
