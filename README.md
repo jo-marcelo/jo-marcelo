@@ -15,7 +15,7 @@ Please feel free to check out my projects below to see how I translate complianc
 
 ## ⚠️ Vulnerability Management Projects
 
-* **[Continuous-Vulnerability-Resolution-Program](https://github.com/jo-marcelo/Continuous-Vulnerability-Resolution-Program)** *(Repo currently private)*
+* **[Continuous-Vulnerability-Resolution-Program](https://github.com/jo-marcelo/Continuous-Vulnerability-Resolution-Program)** *(Unfinished / Repo currently private)*
   * Established end-to-end vulnerability lifecycles, mimicking enterprise-level scanning, asset prioritization, and risk scoring.
 
 ---
@@ -25,7 +25,7 @@ Please feel free to check out my projects below to see how I translate complianc
 * **[azure-threat-hunting-kql](https://github.com/jo-marcelo/azure-threat-hunting-kql)**
   * A threat hunting lab using Microsoft Defender for Endpoint (MDE) and KQL to detect, analyze, and correlate high-velocity internet brute-force attacks against a misconfigured public VM. Demonstrates how to cross-reference security telemetry to validate zero initial access and implement robust infrastructure hardening.
   
-* **[mde-threat-hunting-network-slowdown](https://github.com/jo-marcelo/mde-threat-hunting-network-slowdown)** *(Repo currently private)*
+* **[mde-threat-hunting-network-slowdown](https://github.com/jo-marcelo/mde-threat-hunting-network-slowdown)** *(Unfinished / Repo currently private)*
   * A simulated threat-hunting engagement using Microsoft Defender for Endpoint (MDE) and KQL to detect, isolate, and remediate an internal "Living-off-the-Land" PowerShell port-scanning attack causing local network degradation.
     
 ---
