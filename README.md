@@ -27,8 +27,18 @@ Please feel free to check out my projects below to see how I translate complianc
   
 * **[mde-threat-hunting-network-slowdown](https://github.com/jo-marcelo/mde-threat-hunting-network-slowdown)** *(Repo currently private)*
   * A simulated threat-hunting engagement using Microsoft Defender for Endpoint (MDE) and KQL to detect, isolate, and remediate an internal "Living-off-the-Land" PowerShell port-scanning attack causing local network degradation.
+    
 ---
 
+## 🛠️ Security Automation & Scripting
+
+* **[stig-hardening-monorepo](https://github.com/jo-marcelo/stig-hardening-monorepo)**
+  * A repository utilizing 100% PowerShell to automate system hardening and compliance testing.
+  * Features paired "fix" and "unfix" scripts targeting specific vulnerability configurations (e.g., `WN11-AC-000040` and `WN11-AC-000005`).
+  * Intentionally simulates misconfigurations for controlled environments by reverting security controls, such as password history, minimum password age, IE settings, and the NoLockScreenCamera policy.
+ 
+ ---
+ 
 ## 🤳 Connect With Me
 
 [<img align="left" alt="Joao Miranda | LinkedIn" width="24px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
