@@ -6,7 +6,6 @@
 
 * 📚 **Academic Foundation:** Hold a BS in Computer Science and currently accelerating through an MS in Cybersecurity and Information Assurance (MSCSIA) via Western Governors University (WGU).
 * 🎖️ **Core Credentials:** Active holder of the CompTIA CySA+ (Cybersecurity Analyst) and ISC² Certified in Cybersecurity (CC) certifications.
-* **The Mission:** Driven to tackle complex challenges through hands-on security architecture, defense-in-depth, and proactive threat analysis.
 * 🎯 **What's Next:** Currently sharpening my skillset toward advanced penetration testing (targeting PenTest+).
 
 Please feel free to check out my projects below to see how I translate compliance, frameworks, and threat intelligence into production-ready security operations!
