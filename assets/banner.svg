@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Joao Marcelo Miranda — detection engineering, threat hunting, DFIR">
+
+  <defs>
+    <linearGradient id="sweepGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#4FB3C4" stop-opacity="0"/>
+      <stop offset="70%"  stop-color="#4FB3C4" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#4FB3C4" stop-opacity="0.30"/>
+    </linearGradient>
+    <clipPath id="panel">
+      <rect x="0" y="0" width="1200" height="300" rx="10"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#panel)">
+
+    <!-- panel -->
+    <rect x="0" y="0" width="1200" height="300" rx="10" fill="#0E1621"/>
+
+    <!-- severity rule -->
+    <rect x="64" y="62" width="3" height="78" fill="#F2A65A"/>
+
+    <!-- identity -->
+    <text x="88" y="100"
+          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="38" font-weight="600" letter-spacing="5" fill="#E4EAF1">JOAO MARCELO MIRANDA</text>
+    <text x="90" y="130"
+          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="14" letter-spacing="3.5" fill="#7B8FA3">DETECTION ENGINEERING · THREAT HUNTING · DFIR</text>
+
+    <!-- sweep trail -->
+    <g>
+      <rect x="-260" y="176" width="260" height="70" fill="url(#sweepGrad)">
+        <animate attributeName="x" from="-260" to="1200" dur="6s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="0" y="176" width="1.5" height="70" fill="#4FB3C4" opacity="0.75">
+        <animate attributeName="x" from="64" to="1136" dur="6s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- baseline -->
+    <rect x="64" y="219" width="1072" height="1" fill="#2A3B4D"/>
+
+    <!-- background telemetry ticks -->
+    <g fill="#33475C">
+      <rect x="82"  y="209" width="2" height="10"/><rect x="100" y="212" width="2" height="7"/>
+      <rect x="118" y="206" width="2" height="13"/><rect x="136" y="213" width="2" height="6"/>
+      <rect x="154" y="210" width="2" height="9"/><rect x="172" y="205" width="2" height="14"/>
+      <rect x="208" y="212" width="2" height="7"/><rect x="226" y="208" width="2" height="11"/>
+      <rect x="244" y="213" width="2" height="6"/><rect x="262" y="207" width="2" height="12"/>
+      <rect x="280" y="211" width="2" height="8"/><rect x="298" y="205" width="2" height="14"/>
+      <rect x="334" y="210" width="2" height="9"/><rect x="352" y="213" width="2" height="6"/>
+      <rect x="370" y="206" width="2" height="13"/><rect x="388" y="211" width="2" height="8"/>
+      <rect x="406" y="208" width="2" height="11"/><rect x="424" y="213" width="2" height="6"/>
+      <rect x="442" y="207" width="2" height="12"/><rect x="478" y="210" width="2" height="9"/>
+      <rect x="496" y="205" width="2" height="14"/><rect x="514" y="212" width="2" height="7"/>
+      <rect x="532" y="209" width="2" height="10"/><rect x="550" y="213" width="2" height="6"/>
+      <rect x="568" y="206" width="2" height="13"/><rect x="586" y="211" width="2" height="8"/>
+      <rect x="604" y="208" width="2" height="11"/><rect x="640" y="212" width="2" height="7"/>
+      <rect x="658" y="205" width="2" height="14"/><rect x="676" y="210" width="2" height="9"/>
+      <rect x="694" y="213" width="2" height="6"/><rect x="712" y="207" width="2" height="12"/>
+      <rect x="730" y="211" width="2" height="8"/><rect x="748" y="209" width="2" height="10"/>
+      <rect x="766" y="213" width="2" height="6"/><rect x="806" y="206" width="2" height="13"/>
+      <rect x="824" y="211" width="2" height="8"/><rect x="842" y="208" width="2" height="11"/>
+      <rect x="860" y="213" width="2" height="6"/><rect x="878" y="205" width="2" height="14"/>
+      <rect x="896" y="210" width="2" height="9"/><rect x="914" y="212" width="2" height="7"/>
+      <rect x="952" y="207" width="2" height="12"/><rect x="970" y="211" width="2" height="8"/>
+      <rect x="988" y="213" width="2" height="6"/><rect x="1006" y="209" width="2" height="10"/>
+      <rect x="1024" y="205" width="2" height="14"/><rect x="1042" y="212" width="2" height="7"/>
+      <rect x="1060" y="208" width="2" height="11"/><rect x="1096" y="210" width="2" height="9"/>
+      <rect x="1114" y="213" width="2" height="6"/><rect x="1132" y="207" width="2" height="12"/>
+    </g>
+
+    <!-- findings: ignite as the sweep passes -->
+    <g fill="#F2A65A">
+      <rect x="190" y="181" width="2.5" height="38" opacity="0.35">
+        <animate attributeName="opacity" values="0.35;0.35;1;0.5;0.35"
+                 keyTimes="0;0.098;0.118;0.178;1" dur="6s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="316" y="189" width="2.5" height="30" opacity="0.35">
+        <animate attributeName="opacity" values="0.35;0.35;1;0.5;0.35"
+                 keyTimes="0;0.215;0.235;0.295;1" dur="6s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="460" y="177" width="2.5" height="42" opacity="0.35">
+        <animate attributeName="opacity" values="0.35;0.35;1;0.5;0.35"
+                 keyTimes="0;0.349;0.369;0.429;1" dur="6s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="622" y="186" width="2.5" height="33" opacity="0.35">
+        <animate attributeName="opacity" values="0.35;0.35;1;0.5;0.35"
+                 keyTimes="0;0.500;0.520;0.580;1" dur="6s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="788" y="173" width="2.5" height="46" opacity="0.35">
+        <animate attributeName="opacity" values="0.35;0.35;1;0.5;0.35"
+                 keyTimes="0;0.655;0.675;0.735;1" dur="6s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="934" y="190" width="2.5" height="29" opacity="0.35">
+        <animate attributeName="opacity" values="0.35;0.35;1;0.5;0.35"
+                 keyTimes="0;0.791;0.811;0.871;1" dur="6s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="1078" y="183" width="2.5" height="36" opacity="0.35">
+        <animate attributeName="opacity" values="0.35;0.35;1;0.5;0.35"
+                 keyTimes="0;0.926;0.946;0.990;1" dur="6s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- status bar -->
+    <text x="64" y="262"
+          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="12" letter-spacing="2.5" fill="#7B8FA3">SENTINEL · DEFENDER XDR · KQL · POWERSHELL</text>
+    <text x="1136" y="262" text-anchor="end"
+          font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+          font-size="12" letter-spacing="2.5" fill="#7B8FA3">CySA+ · ISC² CC</text>
+
+  </g>
+</svg>
