@@ -26,7 +26,7 @@ Please feel free to check out my projects below to see how I translate complianc
   * End-to-end incident response investigation of a simulated domain compromise across three hosts, reconstructed from Microsoft Sentinel and Defender XDR telemetry. Covers the full lifecycle: alert triage, intrusion reconstruction, static malware analysis of five recovered artefacts, MITRE ATT&CK mapping, and detection engineering.
   * Root cause traced to **Azure control-plane abuse** — Run Command used to reset a local admin password as SYSTEM, with no MFA on the RDP path — rather than an endpoint exploit.
   * Identified an **AdminSDHolder ACL backdoor** granting domain-admin-equivalent rights that survives password resets and host rebuilds, plus a **prompt-injection payload targeting AI summarisation tools** embedded in the phishing lure.
-  * Deliverables: 20-page incident report, 26 documented KQL queries, 2 validated detection rules, 25 evidence screenshots.
+  * Deliverables: 20-page incident report, 28 documented KQL queries, 2 validated detection rules, 25 evidence screenshots.
 
 * **[azure-threat-hunting-kql](https://github.com/jo-marcelo/azure-threat-hunting-kql)**
   * A threat hunting lab using Microsoft Defender for Endpoint (MDE) and KQL to detect, analyze, and correlate high-velocity internet brute-force attacks against a misconfigured public VM. Demonstrates how to cross-reference security telemetry to validate zero initial access and implement robust infrastructure hardening.
