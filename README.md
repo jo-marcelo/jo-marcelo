@@ -1,62 +1,54 @@
-# <a href="https://www.linkedin.com/in/joaomarcelo-miranda/">Joao Miranda</a>'s IT and Cybersecurity Project Portfolio 🔐
+<img src="assets/banner.svg" alt="Joao Marcelo Miranda — detection engineering, threat hunting, DFIR" width="100%">
+
+Cybersecurity analyst in Rio de Janeiro. I reconstruct incidents from telemetry and turn what I find into detections.
+
+BS in Computer Science, currently completing an MS in Cybersecurity and Information Assurance at Western Governors University. **CompTIA CySA+** and **ISC² CC**, working toward PenTest+.
+
+[LinkedIn](https://www.linkedin.com/in/joaomarcelo-miranda/) · [TryHackMe](https://tryhackme.com/p/jo.marcelo) · [YouTube](https://www.youtube.com/@J-MarceloMiranda)
 
 ---
 
-## 👨‍💻 About Me
+## Featured — [Hidden Directive: DFIR Case Study](https://github.com/jo-marcelo/sentinel-mde-dfir-domain-compromise)
 
-* 📚 **Academic Foundation:** Hold a BS in Computer Science and currently accelerating through an MS in Cybersecurity and Information Assurance (MSCSIA) via Western Governors University (WGU).
-* 🎖️ **Core Credentials:** Active holder of the CompTIA CySA+ (Cybersecurity Analyst) and ISC² Certified in Cybersecurity (CC) certifications.
-* 🎯 **What's Next:** Currently sharpening my skillset toward advanced penetration testing (targeting PenTest+).
+Full incident response investigation of a simulated Azure control-plane compromise, reconstructed from Microsoft Sentinel and Defender XDR telemetry.
 
-Please feel free to check out my projects below to see how I translate compliance, frameworks, and threat intelligence into production-ready security operations!
+An attacker used Azure Run Command to reset a local admin password as SYSTEM, then walked to the domain controller over six hours and planted an **AdminSDHolder ACL backdoor** — persistence that Active Directory re-propagates hourly and that survives password resets and host rebuilds.
 
----
+- 26 documented KQL queries across a 17-hour window and three hosts
+- Static analysis of five recovered artefacts, with named-pipe strings matched against live Sysmon telemetry
+- Two validated detection rules for techniques that generated no alert during the incident
+- Four evidence gaps documented as gaps, with what would resolve each
 
-## ⚠️ Vulnerability Management Projects
-
-* **[Continuous-Vulnerability-Resolution-Program](https://github.com/jo-marcelo/Continuous-Vulnerability-Resolution-Program)** *(Unfinished / Repo currently private)*
-  * Established end-to-end vulnerability lifecycles, mimicking enterprise-level scanning, asset prioritization, and risk scoring.
+**[Read the full report (PDF, 20 pages)](https://github.com/jo-marcelo/sentinel-mde-dfir-domain-compromise/blob/main/report/GF-INC-2026-0704-Incident-Report.pdf)**
 
 ---
 
-## 🎯 Threat Hunting & DFIR
+## Other projects
 
-- **[sentinel-mde-dfir-domain-compromise](https://github.com/jo-marcelo/sentinel-mde-dfir-domain-compromise)** — *full DFIR case study*
+| Project | What it demonstrates | Stack |
+|---|---|---|
+| **[azure-threat-hunting-kql](https://github.com/jo-marcelo/azure-threat-hunting-kql)** | Hunting internet-facing brute force against an exposed Azure VM, then proving *no* compromise through two independent correlation methods | MDE, KQL, Azure |
+| **[mde-threat-hunting-network-slowdown](https://github.com/jo-marcelo/mde-threat-hunting-network-slowdown)** | Tracing a reported network slowdown to an unauthorized Living-off-the-Land PowerShell port scan — detection through containment | MDE, KQL, PowerShell |
+| **[stig-hardening-monorepo](https://github.com/jo-marcelo/stig-hardening-monorepo)** | Automated remediation and rollback for 10 DISA STIG controls on Windows 11, built around a scan-verify loop | PowerShell, Local GPO, Registry |
 
-  * End-to-end incident response investigation of a simulated domain compromise across three hosts, reconstructed from Microsoft Sentinel and Defender XDR telemetry. Covers the full lifecycle: alert triage, intrusion reconstruction, static malware analysis of five recovered artefacts, MITRE ATT&CK mapping, and detection engineering.
-  * Root cause traced to **Azure control-plane abuse** — Run Command used to reset a local admin password as SYSTEM, with no MFA on the RDP path — rather than an endpoint exploit.
-  * Identified an **AdminSDHolder ACL backdoor** granting domain-admin-equivalent rights that survives password resets and host rebuilds, plus a **prompt-injection payload targeting AI summarisation tools** embedded in the phishing lure.
-  * Deliverables: 20-page incident report, 28 documented KQL queries, 2 validated detection rules, 25 evidence screenshots.
-
-* **[azure-threat-hunting-kql](https://github.com/jo-marcelo/azure-threat-hunting-kql)**
-  * A threat hunting lab using Microsoft Defender for Endpoint (MDE) and KQL to detect, analyze, and correlate high-velocity internet brute-force attacks against a misconfigured public VM. Demonstrates how to cross-reference security telemetry to validate zero initial access and implement robust infrastructure hardening.
-  
-* **[mde-threat-hunting-network-slowdown](https://github.com/jo-marcelo/mde-threat-hunting-network-slowdown)**
-  * A simulated threat-hunting engagement using Microsoft Defender for Endpoint (MDE) and KQL to detect, isolate, and remediate an internal "Living-off-the-Land" PowerShell port-scanning attack causing local network degradation.
-    
 ---
 
-## 🛠️ Security Automation & Scripting
+## How I work
 
-* **[stig-hardening-monorepo](https://github.com/jo-marcelo/stig-hardening-monorepo)**
-  * A repository utilizing 100% PowerShell to automate system hardening and compliance testing.
-  * Features paired "fix" and "unfix" scripts targeting specific vulnerability configurations (e.g., `WN11-AC-000040` and `WN11-AC-000005`).
-  * Intentionally simulates misconfigurations for controlled environments by reverting security controls, such as password history, minimum password age, IE settings, and the NoLockScreenCamera policy.
- 
- ---
- 
-## 🤳 Connect With Me
+```mermaid
+flowchart LR
+    A[Telemetry] --> B[Hypothesis]
+    B --> C[Query]
+    C --> D{Evidence?}
+    D -->|Yes| E[Pivot deeper]
+    D -->|No| F[Document the gap]
+    E --> G[Contain & remediate]
+    F --> G
+    G --> H[Detection rule]
+    H --> I[Validate against<br/>the original window]
+    I -.->|rule missed events| C
+```
 
-[<img align="left" alt="Joao Miranda | LinkedIn" width="24px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
-[<img align="left" alt="Joao Miranda | YouTube" width="24px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
+The dashed line is the part that matters. On the DFIR case, validating a finished rule against the incident it was written from revealed that KQL's `has_any` matches whole tokens — so a rule keying on RemCom's named pipes caught 1 of 7 events, because RemCom appends a random suffix to three of them. Rewriting with `contains` caught all seven and surfaced a second attacker session the original write-up had missed.
 
-<br />
-<br />
-
-[youtube]: https://www.youtube.com/@J-MarceloMiranda
-[linkedin]: https://linkedin.com/in/joaomarcelo-miranda/
-
-<!--
-<img width="35" alt="image" src="https://github.com/user-attachments/assets/2f41c7cd-5ea8-4475-b451-a37161b6c3fb"> 
-<img width="35" alt="image" src="https://github.com/user-attachments/assets/77649969-9910-4994-8b96-74a116cfb2a8">
--->
+---
