@@ -14,7 +14,7 @@ Full incident response investigation of a simulated Azure control-plane compromi
 
 An attacker used Azure Run Command to reset a local admin password as SYSTEM, then walked to the domain controller over six hours and planted an **AdminSDHolder ACL backdoor** — persistence that Active Directory re-propagates hourly and that survives password resets and host rebuilds.
 
-- 26 documented KQL queries across a 17-hour window and three hosts
+- 28 documented KQL queries across a 17-hour window and three hosts
 - Static analysis of five recovered artefacts, with named-pipe strings matched against live Sysmon telemetry
 - Two validated detection rules for techniques that generated no alert during the incident
 - Four evidence gaps documented as gaps, with what would resolve each
