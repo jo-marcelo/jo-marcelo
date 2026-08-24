@@ -8,7 +8,7 @@ BS in Computer Science, currently completing an MS in Cybersecurity and Informat
 
 ---
 
-## Featured — [Hidden Directive: DFIR Case Study](https://github.com/jo-marcelo/sentinel-mde-dfir-domain-compromise)
+## Featured - [Hidden Directive: DFIR Case Study](https://github.com/jo-marcelo/sentinel-mde-dfir-domain-compromise)
 
 Full incident response investigation of a simulated Azure control-plane compromise, reconstructed from Microsoft Sentinel and Defender XDR telemetry.
 
