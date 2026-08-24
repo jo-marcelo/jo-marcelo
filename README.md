@@ -30,7 +30,7 @@ An attacker used Azure Run Command to reset a local admin password as SYSTEM, th
 | **[azure-threat-hunting-kql](https://github.com/jo-marcelo/azure-threat-hunting-kql)** | Hunting internet-facing brute force against an exposed Azure VM, then proving *no* compromise through two independent correlation methods | MDE, KQL, Azure |
 | **[mde-threat-hunting-network-slowdown](https://github.com/jo-marcelo/mde-threat-hunting-network-slowdown)** | Tracing a reported network slowdown to an unauthorized Living-off-the-Land PowerShell port scan — detection through containment | MDE, KQL, PowerShell |
 | **[stig-hardening-monorepo](https://github.com/jo-marcelo/stig-hardening-monorepo)** | Automated remediation and rollback for 10 DISA STIG controls on Windows 11, built around a scan-verify loop | PowerShell, Local GPO, Registry |
-| **[continuous-vulnerability-resolution-program](https://github.com/jo-marcelo/Continuous-Vulnerability-Resolution-Program)** | Running a vulnerability management lifecycle end to end across six remediation cycles, each verified by its own delta scan — 24 findings to 4, with one end-of-life package accounting for 17 of them | Tenable Nessus, Azure, PowerShell |
+| **[tenable-vulnerability-management-lab](https://github.com/jo-marcelo/tenable-vulnerability-management-lab)** | Running a vulnerability management lifecycle end to end across six remediation cycles, each verified by its own delta scan — 24 findings to 4, with one end-of-life package accounting for 17 of them | Tenable Nessus, Azure, PowerShell |
 
 ---
 
