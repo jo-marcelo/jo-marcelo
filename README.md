@@ -2,7 +2,7 @@
 
 **Cybersecurity Engineer (Intern) for LOG(N) Pacific** in Rio de Janeiro. I reconstruct incidents from telemetry and turn what I find into detections.
 
-BS in Computer Science, currently completing an MS in Cybersecurity and Information Assurance at Western Governors University. **CompTIA CySA+** and **ISC² CC**, working toward PenTest+.
+BS in Computer Science. CompTIA CySA+ and ISC² CC.
 
 [LinkedIn](https://www.linkedin.com/in/joaomarcelo-miranda/) · [TryHackMe](https://tryhackme.com/p/jo.marcelo) · [YouTube](https://www.youtube.com/@J-MarceloMiranda)
 
