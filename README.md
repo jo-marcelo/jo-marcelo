@@ -1,8 +1,10 @@
 <img src="assets/banner.svg" alt="Joao Marcelo Miranda — detection engineering, threat hunting, DFIR" width="100%">
 
-**Cybersecurity Engineer (Intern) for LOG(N) Pacific** in Rio de Janeiro. I reconstruct incidents from telemetry and turn what I find into detections.
+B.S. Computer Science, CySA+, ITIL.
 
-BS in Computer Science. CompTIA CySA+ and ISC² CC.
+Former Cybersecurity Engineer intern at LOG(N) Pacific.
+
+Open to technical support and IT roles (remote Americas, Rio de Janeiro).
 
 [LinkedIn](https://www.linkedin.com/in/joaomarcelo-miranda/) · [TryHackMe](https://tryhackme.com/p/jo.marcelo) · [YouTube](https://www.youtube.com/@J-MarceloMiranda)
 
