@@ -1,4 +1,4 @@
-<img src="assets/banner.svg" alt="Joao Marcelo Miranda — detection engineering, threat hunting, DFIR" width="100%">
+<img src="assets/banner.svg" alt="Joao Marcelo Miranda, technical support, IT operations and security" width="100%">
 
 B.S. Computer Science, CySA+, ITIL.
 
