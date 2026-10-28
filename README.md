@@ -10,11 +10,25 @@ Open to technical support and IT roles (remote Americas, Rio de Janeiro).
 
 ---
 
-## Featured - [Hidden Directive: DFIR Case Study](https://github.com/jo-marcelo/sentinel-mde-dfir-domain-compromise)
+## Featured: [IT Help Desk Lab](https://github.com/jo-marcelo/it-help-desk-lab)
+
+I built a Microsoft Entra ID tenant on my own domain and worked the tickets a Tier 1 help desk handles every week. Every step is documented with screenshots.
+
+- Admin password resets, with a forced password change at first sign-in
+- MFA enrollment under security defaults, and recovery for a user who lost their phone
+- Self-service password reset
+- The Helpdesk Administrator role tested from both sides. It reset a standard user's password and was blocked when it tried a Global Administrator's
+- Licensing limits on Entra ID Free written down instead of assumed
+
+In progress: a GLPI ticketing instance and an AI help desk simulator in the same repo.
+
+---
+
+## Security case study: [Hidden Directive](https://github.com/jo-marcelo/sentinel-mde-dfir-domain-compromise)
 
 Full incident response investigation of a simulated Azure control-plane compromise, reconstructed from Microsoft Sentinel and Defender XDR telemetry.
 
-An attacker used Azure Run Command to reset a local admin password as SYSTEM, then walked to the domain controller over six hours and planted an **AdminSDHolder ACL backdoor** — persistence that Active Directory re-propagates hourly and that survives password resets and host rebuilds.
+An attacker used Azure Run Command to reset a local admin password as SYSTEM, then moved to the domain controller over six hours and planted an **AdminSDHolder ACL backdoor**. Active Directory re-applies that permission every hour, so it survives password resets and host rebuilds.
 
 - 28 documented KQL queries across a 17-hour window and three hosts
 - Static analysis of five recovered artefacts, with named-pipe strings matched against live Sysmon telemetry
@@ -30,9 +44,9 @@ An attacker used Azure Run Command to reset a local admin password as SYSTEM, th
 | Project | What it demonstrates | Stack |
 |---|---|---|
 | **[azure-threat-hunting-kql](https://github.com/jo-marcelo/azure-threat-hunting-kql)** | Hunting internet-facing brute force against an exposed Azure VM, then proving *no* compromise through two independent correlation methods | MDE, KQL, Azure |
-| **[mde-threat-hunting-network-slowdown](https://github.com/jo-marcelo/mde-threat-hunting-network-slowdown)** | Tracing a reported network slowdown to an unauthorized Living-off-the-Land PowerShell port scan — detection through containment | MDE, KQL, PowerShell |
+| **[mde-threat-hunting-network-slowdown](https://github.com/jo-marcelo/mde-threat-hunting-network-slowdown)** | Tracing a reported network slowdown to an unauthorized Living-off-the-Land PowerShell port scan, from detection through containment | MDE, KQL, PowerShell |
 | **[stig-hardening-monorepo](https://github.com/jo-marcelo/stig-hardening-monorepo)** | Automated remediation and rollback for 10 DISA STIG controls on Windows 11, built around a scan-verify loop | PowerShell, Local GPO, Registry |
-| **[tenable-vulnerability-management-lab](https://github.com/jo-marcelo/tenable-vulnerability-management-lab)** | Running a vulnerability management lifecycle end to end across six remediation cycles, each verified by its own delta scan — 24 findings to 4, with one end-of-life package accounting for 17 of them | Tenable Nessus, Azure, PowerShell |
+| **[tenable-vulnerability-management-lab](https://github.com/jo-marcelo/tenable-vulnerability-management-lab)** | Running a vulnerability management lifecycle end to end across six remediation cycles, each verified by its own delta scan. Findings went from 24 to 4, and one end-of-life package accounted for 17 of them | Tenable Nessus, Azure, PowerShell |
 
 ---
 
@@ -52,6 +66,6 @@ flowchart LR
     I -.->|rule missed events| C
 ```
 
-The dashed line is the part that matters. On the DFIR case, validating a finished rule against the incident it was written from revealed that KQL's `has_any` matches whole tokens — so a rule keying on RemCom's named pipes caught 1 of 7 events, because RemCom appends a random suffix to three of them. Rewriting with `contains` caught all seven and surfaced a second attacker session the original write-up had missed.
+The dashed line is the part that matters. On the DFIR case, I validated a finished rule against the incident it was written from. KQL's `has_any` matches whole tokens, and RemCom appends a random suffix to three of its named pipes, so the rule caught 1 of 7 events. Rewriting it with `contains` caught all seven and surfaced a second attacker session the original write-up had missed.
 
----
+The same habit applies on the help desk side. A fix isn't done when the setting changes. It's done when I've confirmed the user can actually sign in.
