@@ -12,15 +12,19 @@ Open to technical support and IT roles (remote Americas, Rio de Janeiro).
 
 ## Featured: [IT Help Desk Lab](https://github.com/jo-marcelo/it-help-desk-lab)
 
-I built a Microsoft Entra ID tenant on my own domain and worked the tickets a Tier 1 help desk handles every week. Every step is documented with screenshots.
+A Tier 1 help desk built end to end in three parts: the admin work, the ticketing, and the phone call.
 
-- Admin password resets, with a forced password change at first sign-in
+**Microsoft Entra ID.** A tenant on my own domain, worked through the tickets a help desk handles every week.
+- Admin password resets with a forced change at first sign-in, and self-service password reset
 - MFA enrollment under security defaults, and recovery for a user who lost their phone
-- Self-service password reset
-- The Helpdesk Administrator role tested from both sides. It reset a standard user's password and was blocked when it tried a Global Administrator's
+- The Helpdesk Administrator role tested from both sides. It reset a standard user's password and was blocked on a Global Administrator's
 - Licensing limits on Entra ID Free written down instead of assumed
 
-In progress: a GLPI ticketing instance and an AI help desk simulator in the same repo.
+**GLPI ticketing.** GLPI 11 in Docker with ITIL categories, three support groups, and P1 to P4 SLAs applied by business rules. Eight tickets worked end to end, including escalations to Security and Network.
+
+**AI help desk simulator.** Claude plays the caller, I work the ticket, and a second model grades the call against a fixed rubric, quoting the transcript line behind every deduction. Eight scenarios, from a forgotten password to a Sales Director demanding a reset 20 minutes before a board call, calling from an unknown number. That one tests whether identity verification holds under pressure.
+
+<img src="https://github.com/jo-marcelo/it-help-desk-lab/raw/main/screenshots/sim-04-scorecard.png" alt="Simulator scorecard: 98/100 on the exec lockout scenario" width="100%">
 
 ---
 
